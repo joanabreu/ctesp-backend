@@ -118,9 +118,53 @@ function calculateFact(value){
 var f = calculateFact (3);
 console.log("f:" + f);
 
-/*Alínea 11*/
-function (){
-    
+/*Alínea 11Criação de arrays*/
+var array = [1, 1, 1, 1, 1];
+/*zero-based index*/
+/*Indexação do valor*/
+console.log(array[0]);
+/*Alteração*/
+array[0] = 500;
+console.log(array[0]);
 }
 
+function calculateAverage(array){
+    var sum = 0;
+    var average = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum = sum + array[i];
+    }
+    average = sum / array.length;
+    return average
+    /*console.log(sum);*/
+}
+ calculateAverage(array);
+/*console.log("Length:" + array.lenght); Devolve uma lista e podemos ver o indice utilizando o indice*/
+var avg = calculateAverage (array);
 
+var array = [1, 1, 6, 1, 1];
+
+function geMax(array){
+    var max = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if(array[i] > max){
+            max = array[i];
+        }
+    }
+    return max;
+}
+var max = getMax(array);
+console.log("Max:" + max)
+
+function getMin(array){
+    var min = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if(array[i] < min){
+            min = array[i];
+        }
+    }
+    return min;
+}
+var min = getMin(array);
+console.log("Min:" + min);
+    
