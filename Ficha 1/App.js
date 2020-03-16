@@ -71,8 +71,8 @@ function calculator(operand1, operand2, operador){
         console.log(operand1 - operand2);
 }
 
-    else if(operator == '*'){
-    console.log(operand1 * operand2);
+    else if(operator == 'x'){
+    console.log(operand1 x operand2);
 }
 
     else if(operator == '/'){
@@ -93,7 +93,34 @@ function multipleOfFive(value){
 multipleOfFive(20);
 
 /*Alínea 9*/
-function multipleOfFive(){
+function sumOf(value){
+    var soma = 0;
+    for (let i = 1; i <= value; i++) {
+        soma = soma + i;
+    }
+    console.log(soma);
+}
+sumOf(3);
+/*soma= 1 + 2 + 3 + 4 + ... + 100*/
+
+/*Alínea 10*/
+function calculateFact(value){
+    /*3 x 2 x 1*/
+    var fact = 1;
+    for (let i = value; i >= 1; i--) {
+        fact = fact * i;      
+    }
+    console.log(fact);
+    return fact;
+}
+/*calculateFact (3); */
+
+var f = calculateFact (3);
+console.log("f:" + f);
+
+/*Alínea 11*/
+function (){
     
 }
+
 
