@@ -2,7 +2,9 @@ var i =0;
 var d = 0.5;
 var str ="Hello";
 
-function calcularFinalGrade(practical , theoreticalGrade)
+function calcularFinalGrade(practical , theoreticalGrade){
+    
+}
 var finalGrade = (practical + theoreticalGrade) /2;
 return finalGrade;
 }
